@@ -1,0 +1,57 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=\, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <header>
+      <nav>
+        <ul>
+          <li><a href="/">Inicio</a></li>
+          <li><a href="/dia3.html">Etiquetas semanticas</a></li>
+          <li><a href="/dia3-lista.html">Listas</a></li>
+          <li><a href="/dia3-multimedia.html">Multimedia</a></li>
+        </ul>
+      </nav>
+    </header>
+    <div>
+      <h1>Video</h1>
+      <video controls autoplay width="500" height="500" muted loop>
+        <source src="./videos/rabbit320.webm" />
+      </video>
+    </div>
+    <div>
+      <h1>Iframe</h1>
+      <!-- Iframe puede contener cualquier tipo de archivo-->
+      <iframe
+        width="761"
+        height="428"
+        src="https://www.youtube.com/embed/r6t0czGbuGI"
+        title="YouTube video player"
+        frameborder="0"
+        allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture"
+        allowfullscreen
+      ></iframe>
+      <!-- <iframe width="500" height="500" src="./videos/rabbit320.webm"> </iframe> -->
+      <iframe
+        src="./files/examen.pdf"
+        frameborder="0"
+        width="700"
+        height="700"
+      ></iframe>
+    </div>
+    <div>
+      <h1>Audio</h1>
+      <!-- Forma tradicional -->
+      <img src="./imagenes/banner.jpeg" width="300" alt="" />
+      <audio controls>
+        <source src="./files/viper.mp3" />
+      </audio>
+      <!-- Forma actual -->
+      <audio src="./files/viper.mp3" controls></audio>
+    </div>
+  </body>
+</html>
