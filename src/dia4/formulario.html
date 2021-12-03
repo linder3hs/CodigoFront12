@@ -1,0 +1,134 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Dia 4 - Formularios</title>
+  </head>
+  <body>
+    <!-- Los formulario es html son muy comunes los vamos a encontrar en toda paga web -->
+    <!-- Form de login -->
+    <!-- Form de registro -->
+    <!-- Form de contacto -->
+    <!-- Form de news -->
+    <!-- Un formulario esta compuesto por  -->
+    <!-- input (cajas de text, numero, fecha, color, email, password) -->
+    <!-- botones para poder enviar la info -->
+    <!-- select (son menus desplegables) -->
+    <!-- Todo esto esta envuelto en un formulario form -->
+    <!-- el form tiene atributos por ejemplo -->
+    <!-- action: es a donde se va a enviar la info (es to lo veremos en back) -->
+    <!-- method: es la forma en la informacion sera enviada (javascript) -->
+    <form action="" method>
+      <!-- Ojo debemos p oner nuestros input dentro del form, es decir el form engloba las etiquetas input, button, select, etc -->
+      <!-- El input es un caja de texto la cual se cierra asi misma, esta tiene como el type, el cual indica de que tipo es -->
+      <!-- placeholder: Es un texto de ayuda -->
+      <!-- value: Es el valor que se le puede dar a un input -->
+      <!-- name: Que basicamente es el nombre que se le puede asignar al input -->
+      <!-- TODAS LAS ETIQUETAS DE HTML PUEDEN TENER UN ID, PARA PODER IDENTIFICARLAS PARA CSS O JS -->
+      <h4>Input texto</h4>
+      <!-- En los formulario puede poner restricciones -->
+      <!-- Puedo indicar que input son requerido para que se ejecute la accion -->
+      <!--** Fieldset  -->
+      <!-- Un fieldset sirve como contenedor o caja de datos, pero tiene la propiedad que se le puede 
+      poner una leyenda -->
+      <fieldset>
+        <legend>Informacion de las personas</legend>
+        <input
+          type="text"
+          placeholder="Ingrese su nombre"
+          value="Pepito"
+          maxlength="10"
+          minlength="5"
+          name="nombre"
+        />
+        <h4>Input number</h4>
+        <input type="number" placeholder="Ingrese un numero" name="numero" />
+        <h4>Input fecha</h4>
+        <input
+          type="date"
+          placeholder="Ingrese una fecha"
+          name="fecha_nacimiento"
+        />
+        <h4>Input hora</h4>
+        <input type="time" placeholder="Ingrese una fecha" name="hora" />
+        <h4>Input archivo</h4>
+        <input type="file" placeholder="Ingrese un archivo" name="archivo" />
+      </fieldset>
+      <h4>Input color</h4>
+      <input type="color" placeholder="Ingrese un color" name="color" />
+      <h4>Input password</h4>
+      <input
+        type="password"
+        placeholder="Ingrese su password"
+        name="password"
+        required
+      />
+      <h4>Input email</h4>
+      <label for="email">Ingrese un correo</label>
+      <input
+        id="email"
+        type="email"
+        placeholder="Ingrese un email"
+        name="email"
+        required
+      />
+      <!-- Input de marcado checkbox, radiobutton -->
+      <h4>Radio button</h4>
+      <!-- En los input para poder asignat un texto debo usar la etiqueta label -->
+      <!-- El for de label hace referencia al id del input -->
+      <label for="radio_1">
+        <input id="radio_1" type="radio" name="opcion_color" /> Rojo
+      </label>
+
+      <input type="radio" name="opcion_color" /> Azul
+      <input type="radio" name="opcion_color" /> Verde
+      <h4>Check box</h4>
+      <!-- Los checbox permite marcar mas de una opcion -->
+      <input type="checkbox" name="curso" /> Matematica
+      <input type="checkbox" name="curso" /> Lenguaje
+      <input type="checkbox" name="curso" /> HTML
+      <input type="checkbox" name="curso" /> JavaScript
+      <input type="checkbox" name="curso" /> CSS
+
+      <!-- Lo select (como combo box, menu desplegable) -->
+      <h4>Select</h4>
+      <!-- Los select se componen de 2 elementos el padre select y el hijo option (los option
+      son cada opcion de select) -->
+      <!-- Los select tambie tiene un name, pero ese va como atributo del selct -->
+      <!-- cuando yo envie la data el select va a enviar al que este seleccionado, por ende cada
+      option debe tener un value, por que ese valor es el que envia -->
+      <select name="cursos_codigo">
+        <option value="" selected disabled></option>
+        <option value="html">HTML</option>
+        <option value="css">CSS</option>
+        <option value="js">JavaScript</option>
+        <option value="rjs">React JS</option>
+      </select>
+      <!-- Por default la primera opcion es la que se muestra como marcada -->
+      <!-- los option tiene el atributo selected que permite marca un opcion y mostrarla -->
+      <select name="paises">
+        <option value="perú">Peru</option>
+        <option value="colombia" selected>Colombia</option>
+        <option value="chile">Chile</option>
+        <option value="mexico">Mexico</option>
+      </select>
+      <!--!! TEXTAREA -->
+      <!-- Este elemente basicamente es una caja de texto muy grande, sirve para poder ingresar mensajes
+      largos o texto de desarrollo un tema, etx -->
+      <h4>Texarea</h4>
+      <textarea
+        placeholder="Ingrese un texto sobre usted"
+        name="text_sobre_mi"
+        rows="10"
+        cols="120"
+      ></textarea>
+      <!-- hay un input submit, ahora este submit significa que es el boton que envia la informacion -->
+      <!-- este submit puede un boton o input -->
+      <h3>Submit</h3>
+      <input type="submit" value="Enviar datos" />
+      <button type="submit">Enviar</button>
+    </form>
+  </body>
+</html>
