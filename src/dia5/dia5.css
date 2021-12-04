@@ -1,0 +1,145 @@
+/*** QUE ES CSS */
+/* Para poder ver reflejado mis estilos en mi pagina web 
+yo debo vincular mi archivo .css en mi .html */
+/* Es un motor de estilos muy potente */
+/* se acostumbre a tener un estilo global para quitarle
+el pading y el margin a una pagina web */
+/* padding: Es el espacio interno de un elemento */
+/* margin: Es el espacio externo de un  elemento */
+
+/* Estilos globales
+para poder tene un estilo global para mi web yo puedo esl * */
+
+/* Se recomienda solo manejar el margin, padding y border-box */
+* {
+  padding: 0;
+  margin: 0;
+}
+
+/* Que etiqueta debo usar si quiero aplicar un estilo a todo mi body */
+body {
+  /* font-family: Es el atributo que me permite cambiar el tipo de letra */
+  /* Actualmente las computadoras viene con el tipo de letra instaldo */
+  /* Los tipos de letra estan instalados en sus computadoras */
+  /* Monsetrat: Es un tipo de letra que no esta instalado, para poder usar un tipo de letra
+  externo podemos descargo y agregarlo al proyecto como un archivo o usar un link 
+  de referencia*/
+  /* Hay algunas fuentes (tipos de letra) que necesitan estar entre comillas, por pueden nombres compuesto */
+  /* Uno puede anidar tipo de letra */
+  /* Porque puede pasar que por ejemplo Gill Sans no este instalado en sus maquinas
+  para prevenir ponemos opciones multiples, si no encuenta a Gill Sans buscara a Helvetica*/
+  font-family: "Gill Sans", Helvetica, Arial, sans-serif;
+  background-color: #9cd9dc;
+}
+
+/* Ahora vamos a ver como aplicar a una etiqueta especial */
+/* quiero que mi h1 se de color rojo */
+h1 {
+  /* color: Es el color de los textos */
+  color: #ab1234;
+  /* Background-color: Es el color de fondo de un elemento */
+  background-color: #000;
+  /* font-weight: Esto para poder asignarle un peso a las letras */
+  /* Esta en el rango 100 - 900, pero tambiene la propiedad bold, es para 
+  el texto negrita */
+  font-weight: bold;
+  text-align: center;
+}
+
+section {
+  background-color: yellow;
+  /* border: Es una propiedad para poner un borde a un elemnte, border recibe 3 cosas
+  tamaño de pixel, color, tipo de linea */
+  border: solid red 3px;
+}
+
+/* Como accede a un elemnte hijo */
+/* Para poder acceder a un elemnte en casca puede anidar la etiquetas */
+/* Busca al elemento article y dentro de este debe esta el p y a ese p pon
+el color azul */
+article p {
+  color: blue;
+  /* text-align: Permite poner el texto en 4 formas:
+    Alineado a la derecha
+    Alineado a la izquierda
+    Centrado
+    Justificado */
+  text-align: center;
+  /* font-size: Esto sirve para manejar el tamaño de mi text */
+  font-size: 18px;
+}
+
+/* Como puedo hacer que mis li sean verdes? */
+li {
+  color: green;
+}
+
+nav {
+  border: 2px solid #a1b;
+  text-align: right;
+}
+
+/* como hago para que ul tenga como color de fondo un gris */
+/* hacer que mi lista sea horizontal */
+ul {
+  background-color: #ddd;
+  border: 2px solid #f01;
+}
+/* Que significa esto? */
+ul li {
+  /* Le quita la viñetas a mi li */
+  list-style: none;
+  /* display: Es la propiedad en la que se puede mostrar un elemento, por
+  default es display: block */
+  display: inline;
+}
+
+a {
+  color: #000;
+  /* text-decoration: Es una propieda poder asignar distintos estilos a un texto */
+  /* Cuando ustede vean none en una propiedad significa que esa desahabilitad */
+  text-decoration: none;
+}
+
+/* Este div contiene a mi foto */
+div {
+  border: 5px solid #000;
+  text-align: center;
+}
+
+img {
+  /* width y height son para manejar el ancho y la altura respectivamente
+  la unidad basica son px, que sin pixeles */
+  width: 50%;
+  height: 300px;
+}
+
+/* ID */
+/* Para poder accede a un id que es html usamos el # + el nombre que le asignamos */
+#titulo {
+  color: aquamarine;
+}
+
+#text__introduccion {
+  text-align: justify;
+}
+
+/* Con los ID tenemos un tema */
+/* Porque en teoria los id deben unicos, es decir solo deben afectar a un
+elemnto, pero en la practica se puede asignar, esto no es una buena practica */
+
+/* Para poder repetir identificadores de elementos se recemienda usar clases */
+/* Para poder acceder a una clase desde css usamos el . */
+/* Usando clases podemos reutilizar codigo css */
+.text__pagina {
+  color: chocolate;
+}
+
+/* Se recomienda usar clases en vez de id, solo usemos id cuando se necesario */
+/* Ejemplo podemos usar id para el logo central de pagina o para el h1 de la web*/
+
+#logo {
+  width: 300px;
+  height: 100px;
+  border: 4px solid rgb(56, 255, 255);
+}
