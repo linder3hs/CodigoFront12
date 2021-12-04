@@ -3,9 +3,16 @@ body {
   font-family: "Outfit", sans-serif;
 }
 
+#padre {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 100vh;
+}
+
 #contenedor {
   background-color: hsl(216, 50%, 16%);
-  width: 40%;
+  width: 20%;
   padding: 10px;
   border-radius: 12px;
 }
