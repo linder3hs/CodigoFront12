@@ -1,0 +1,108 @@
+/*
+GLOBALES
+*/
+body {
+  font-family: arial;
+  color: white;
+  font-size: 13px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+p {
+  font-size: 16px;
+  line-height: 24px;
+}
+
+a {
+  color: inherit;
+  text-decoration: none;
+}
+
+/*STICKY FOOTER*/
+.wrap {
+  display: flex;
+  flex-direction: column;
+  height: 100vh;
+}
+
+.wrap .main {
+  flex-grow: 1;
+}
+
+/*
+HEADER
+*/
+.header {
+  background: red;
+  padding: 25px;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.header .logo {
+  font-size: 42px;
+}
+
+.header ul {
+  display: flex;
+}
+
+header li {
+  margin-left: 30px;
+}
+
+/*
+MAIN
+*/
+.main {
+  color: black;
+  display: flex;
+}
+
+.main aside {
+  background: #15d604;
+  padding: 20px;
+  color: white;
+}
+
+.main aside li {
+  margin-bottom: 20px;
+}
+
+.main .main-section {
+  padding: 20px;
+}
+
+.main h1 {
+  margin-bottom: 20px;
+}
+
+.main p {
+  margin-bottom: 20px;
+}
+
+/*ARTICLES*/
+.articles {
+  display: flex;
+}
+
+.articles img {
+  width: 100%;
+}
+
+.articles article {
+  border: 3px solid black;
+  margin-right: 20px;
+}
+
+/*FOOTER*/
+.footer {
+  background: red;
+  display: flex;
+  justify-content: space-between;
+  padding: 20px;
+}
