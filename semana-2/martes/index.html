@@ -18,8 +18,12 @@
             background: orange;
         }
 
-        ul a {
+        ul li {
             color: white;
+        }
+
+        ul li:hover {
+            font-size: 40px;
         }
 
         /*SELECTORES POR ATRIBUTO*/
@@ -40,14 +44,71 @@
             color: white;
             background: yellow;
         }
+
+        /*PSEUDO - CLASES*/
+        .box:hover {
+            /*aca puedes poner cualquier estilo*/
+            background: blueviolet;
+        }
+
+        .box:hover h2 {
+            color: white;
+        }
+
+        input:focus {
+            outline: none;
+            box-shadow: 0 0 10px blue;
+        }
+
+        ul.one li:first-child {
+            color: brown;
+        }
+
+        ul.one li:last-child {
+            color: brown;
+        }
+
+        ul.one li:nth-child(1) {
+            color: orange;
+        }
+
+        ul.one li:nth-child(odd) {
+            background: white;
+        }
+
+        ul.one li:nth-child(even) {
+            background: green;
+        }
     </style>
 </head>
 
 <body>
-    <div class="box"></div>
-    <ul>
-        <li><a href="">1</a></li>
-        <li><a href="">2</a></li>
+    <div class="box">
+        <h2>texto</h2>
+    </div>
+    <ul class="one">
+        <li>asdsadsad</li>
+        <li>afasfsa</li>
+        <li>asfsaf</li>
+        <li>asfsafsaf</li>
+        <li>asfsafasfsafsa</li>
+    </ul>
+
+    <style>
+        .two li:nth-child(2n+2) {
+            background: blue;
+        }
+
+        .two li:nth-child(2n+1) {
+            background: green;
+        }
+    </style>
+    <ul class="two">
+        <li>asdsadsad</li>
+        <li>afasfsa</li>
+        <li>asfsaf</li>
+        <li>asfsafsaf</li>
+        <li>asfsafasfsafsa</li>
     </ul>
 
     <input type="text">
