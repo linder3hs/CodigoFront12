@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>SELECTORES</title>
+    <style>
+        /*SELECTORES SIMPLES*/
+        body {
+            background: red;
+        }
+
+        .box {
+            width: 200px;
+            height: 200px;
+            background: orange;
+        }
+
+        ul a {
+            color: white;
+        }
+
+        /*SELECTORES POR ATRIBUTO*/
+        input[type="text"] {
+            padding: 20px;
+        }
+
+        input[disabled] {
+            background: grey;
+        }
+
+        a[href="https://www.linkedin.com"] {
+            background: blueviolet;
+            color: orange;
+        }
+
+        a[href="https://www.google.com"] {
+            color: white;
+            background: yellow;
+        }
+    </style>
+</head>
+
+<body>
+    <div class="box"></div>
+    <ul>
+        <li><a href="">1</a></li>
+        <li><a href="">2</a></li>
+    </ul>
+
+    <input type="text">
+    <input type="checkbox">
+    <input type="password">
+    <input type="text" disabled>
+    <a href="https://www.linkedin.com">LINKEDIN</a>
+    <a href="https://www.google.com">GOOGLE</a>
+</body>
+
+</html>
