@@ -23,6 +23,15 @@ a {
 
 /*STICKY FOOTER*/
 .wrap {
+  height: 100vh;
+  display: flex;
+  flex-direction: column;
+}
+
+.wrap .main {
+  flex-grow: 1;
+}
+/* .wrap {
   display: flex;
   flex-direction: column;
   height: 100vh;
@@ -30,7 +39,7 @@ a {
 
 .wrap .main {
   flex-grow: 1;
-}
+} */
 
 /*
 HEADER
