@@ -22,7 +22,7 @@
             color: white;
         }
 
-        ul li:hover {
+        ul.one li:hover {
             font-size: 40px;
         }
 
@@ -117,6 +117,94 @@
     <input type="text" disabled>
     <a href="https://www.linkedin.com">LINKEDIN</a>
     <a href="https://www.google.com">GOOGLE</a>
+
+    <style>
+        /*PSEUDO ELEMENTOS*/
+        /* h2::before {
+            content: "''"
+        }
+
+        h2::after {
+            content: "''"
+        } */
+
+        h2::first-letter {
+            font-size: 40px;
+        }
+
+        p::first-line {
+            background: white;
+        }
+    </style>
+    <h2>TITULO DE PAGINA HOLA MUNDO</h2>
+    <p>Lorem ipsum dolor sit amet consectetur adipisicing elit. Amet et minima temporibus magnam nesciunt nulla
+        exercitationem quam quisquam ipsam numquam delectus nihil quo, assumenda voluptates consequuntur fuga, nobis
+        tempore quod!</p>
+
+
+    <style>
+        ul>li {
+            border-top: 5px solid blue;
+        }
+    </style>
+    <ul>
+        <li>Unordered item</li>
+        <li>Unordered item
+            <ol>
+                <li>Item 1</li>
+                <li>Item 2</li>
+            </ol>
+        </li>
+    </ul>
+
+
+    <style>
+        h2+p {
+            background: blue;
+        }
+    </style>
+
+    <h2>TITULO</h2>
+    <p>Lorem</p>
+    <p>Lorem</p>
+    <p>Lorem</p>
+
+    <h2>TITULO</h2>
+    <p>Lorem</p>
+
+    <style>
+        h3~p {
+            background: orange;
+        }
+
+        *::selection {
+            background: pink;
+        }
+    </style>
+    <h3>TITULO</h3>
+    <p>Lorem</p>
+    <p>Lorem</p>
+    <p>Lorem</p>
+
+    <style>
+        /*SELECTOR MULTIPLE*/
+        h1,
+        h2,
+        h3,
+        h4,
+        h5,
+        h6 {
+            color: red;
+            font-family: arial;
+            background: green;
+        }
+    </style>
+    <h1>h1</h1>
+    <h2>h2</h2>
+    <h3>h3</h3>
+    <h4>h4</h4>
+    <h5>h5</h5>
+    <h6>h6</h6>
 </body>
 
 </html>
