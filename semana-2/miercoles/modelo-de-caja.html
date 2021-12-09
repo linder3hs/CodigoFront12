@@ -1,0 +1,185 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MODELO DE CAJA</title>
+    <style>
+        /*DISPLAY
+         display: block; // convierte en bloque al elemento
+         display: inline; // convierte inline al elemento
+         display: none; // esconde el elemento
+         visibility: hidden; // esconde elementos pero siguen ocupando su espacio
+         display:inline-block // representa correctamente espaciados pero sigue ocupando solo el ancho de su contenido
+        */
+        body {
+            margin: 0;
+        }
+
+        a {
+            display: inline-block;
+            margin-bottom: 10px;
+            padding: 20px;
+        }
+    </style>
+</head>
+
+<body>
+    <header>
+        HEADER
+    </header>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <a href="">ENLACE</a>
+    <div>DIV</div>
+    <h1>H1</h1>
+    <span>SPAN</span>
+
+    <style>
+        h2.bordes {
+            /* border-style: dotted;
+            border-width: 6px;
+            border-color: red; */
+            border: 10px dotted red;
+        }
+    </style>
+    <h2 class="bordes">BORDES</h2>
+
+    <style>
+        .margen {
+            background: red;
+            width: 100px;
+            height: 100px;
+            /* margin-left: 20px;
+            margin-right: 20px;
+            margin-top: 20px;
+            margin-bottom: 20px; */
+            /* margin: 20px 20px 20px 20px; */
+            /* margin: 20px 20px 20px; */
+            /* margin: 20px 20px; */
+            margin: 20px;
+        }
+    </style>
+    <h2>MARGENES</h2>
+    <div class="margen">
+    </div>
+    <div class="margen">
+    </div>
+
+    <style>
+        .padding {
+            background: yellow;
+            margin: 10px;
+            /* padding-left:20px;
+            padding-right:20px;
+            padding-top: 20px;
+            padding-bottom: 20px; */
+            /* padding: 20px 20px 20px 20px; */
+            /* padding: 10px 20px 5px; */
+            /* padding: 10px 20px; */
+            padding: 20px;
+        }
+    </style>
+    <h2>PADDING</h2>
+    <div class="padding">
+        PADDING
+    </div>
+    <div class="padding">
+        PADDING
+    </div>
+
+    <style>
+        * {
+            box-sizing: border-box;
+        }
+
+        .box-sizing {
+            /* width: 5000px; */
+            height: 200px;
+            background: orange;
+            padding: 20px;
+        }
+    </style>
+    <div class="box-sizing">
+        BOX SIZING
+    </div>
+
+    <style>
+        .box-viewport {
+            width: 200px;
+            height: 200px;
+            background: pink;
+            overflow: hidden;
+            overflow-x: auto;
+        }
+
+        .box-viewport p {
+            width: 5000px;
+            height: 5000px;
+        }
+    </style>
+    <h2>OVERFLOW</h2>
+    <div class="box-viewport">
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ab laborum odio provident autem, ex
+            reprehenderit odit quo, nisi necessitatibus suscipit est illo, neque perspiciatis? Autem quaerat dolore
+            atque
+            deserunt!</p>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ab laborum odio provident autem, ex
+            reprehenderit odit quo, nisi necessitatibus suscipit est illo, neque perspiciatis? Autem quaerat dolore
+            atque
+            deserunt!</p>
+        <p> Lorem, ipsum dolor sit amet consectetur adipisicing elit. Incidunt ab laborum odio provident autem, ex
+            reprehenderit odit quo, nisi necessitatibus suscipit est illo, neque perspiciatis? Autem quaerat dolore
+            atque
+            deserunt!</p>
+    </div>
+
+    <h2>BACKGROUND</h2>
+    <style>
+        .background {
+            width: 200px;
+            height: 200px;
+            /* background-color: green;
+            background-image: url("https://media.prod.mdn.mozit.cloud/attachments/2015/12/02/11983/4e58af0c4274c982a2485fba43a06917/starsolid.gif");
+            background-repeat: no-repeat;
+            background-position: center center; */
+            background: url("./images/starsolid.gif") no-repeat green;
+            /* background: url("./images/img_flwr.gif") no-repeat right bottom, url("./images/paper.gif") repeat green; */
+        }
+    </style>
+    <div class="background"></div>
+
+    <h2>OUTLINE</h2>
+    <style>
+        .outline {
+            width: 200px;
+            height: 200px;
+            outline: 10px solid red;
+        }
+
+        input {
+            padding: 10px;
+        }
+
+        input:focus {
+            outline: 0;
+        }
+    </style>
+    <div class="outline">
+        OUTLINE
+    </div>
+    <input type="text">
+    
+</body>
+
+</html>
