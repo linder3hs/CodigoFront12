@@ -1,0 +1,90 @@
+/*
+GLOBALES
+*/
+body {
+  font-family: arial;
+  font-size: 13px;
+  color: #707070;
+}
+
+h1 {
+  font-size:20px;
+  color: red;
+  width: 100px;
+  height: 200px;
+  padding: 20px;
+  margin: 20px;
+}
+
+h2 {
+  font-size: 20px;
+}
+
+h3 {
+  font-size: 18px;
+}
+
+a {
+  color: red;
+  text-decoration: none;
+}
+
+input {
+  padding: 20px;
+  font-size: 14px;
+  border: 1px solid red;
+}
+
+/*tarjetas*/
+.tarjetas div {
+   /*aca estilos*/
+}
+
+/*NAV*/
+.nav a {
+
+}
+
+/*
+HEADER
+*/
+.header .logo {
+  color: pink;
+}
+
+/*HOME*/
+.home h2 {
+  color: #3b06d2;
+}
+
+.home .tarjetas div {
+
+}
+
+/*SERVICIOS*/
+.servicios h2 {
+  color: #d206b2;
+}
+
+.servicios input {
+  border: 1px solid blue;
+}
+
+.servicios li {
+  font-size: 18px;
+  font-weight: bold;
+}
+
+.servicios li.first {
+  color: #ff0000;
+}
+
+.servicios li.two {
+  color: #1400ff;
+}
+
+.servicios h1 {
+  font-size: 24px;
+  color: orange;
+}
+
